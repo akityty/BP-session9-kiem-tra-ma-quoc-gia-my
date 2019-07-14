@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isUsaZipCode(str) {
+      regexp = /^[0-9]{5}(?:-[0-4]{4})?$/;
+        if(regexp.test(str)){
+            alert("USA zip code");
+        } else{
+            alert("not USA zip code");
+        }
+    }
+    let str = prompt("nhap usa zipcode");
+    isUsaZipCode(str);
+</script>
+</body>
+</html>
